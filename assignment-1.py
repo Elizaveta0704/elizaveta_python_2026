@@ -22,7 +22,7 @@ print()
 # Section 3
 
 notebook_price = float (input("What price is your notebook? "))
-quantity = int(input ('How many notebooks? '))
+quantity = float (input ('How many notebooks? '))
 total_price = notebook_price * quantity
 print(f"{notebook_price} × {quantity} = {total_price}")
 print()
@@ -38,10 +38,10 @@ print("===========================")
 print("          RECEIPT")
 print("===========================")
 print(f"Item:      {item_name}")
-print(f"Price:     ${price}")
+print(f"Price:     ${price:.2f}")
 print(f"Quantity:  {quantity}")
 print("---------------------------")
-print(f"Total:     ${total}")
+print(f"Total:     ${total:.2f}")
 print("===========================")
 print()
 
